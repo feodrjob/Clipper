@@ -1,0 +1,1 @@
+"""Transcript clip analysis boundary."""

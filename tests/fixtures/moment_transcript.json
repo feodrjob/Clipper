@@ -1,0 +1,10 @@
+[
+  [0, 10, "Why does a small mistake sometimes cost more than a big one? Here is what happened to us."],
+  [10, 20, "We ignored a one-line warning and lost a day. Reading that line first would have prevented it. That is the lesson."],
+  [20, 30, "For the next topic, let me explain some background about the team and its old equipment."],
+  [30, 40, "The team had three machines and we needed to understand their history before making a change."],
+  [40, 50, "My cat solved our meeting problem: she unplugged the microphone at exactly the right moment."],
+  [50, 60, "Everyone laughed, we stopped arguing, and the answer became obvious. The cat got the credit."],
+  [60, 70, "A surprising fact: adding more workers can make a task slower if they all wait for the same lock."],
+  [70, 80, "Measure the bottleneck before buying hardware. Once we removed the lock, the same machines finished twice as fast."]
+]

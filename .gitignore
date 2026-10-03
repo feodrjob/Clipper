@@ -1,0 +1,17 @@
+# Local environments and IDE settings (already tracked files remain tracked).
+.venv/
+.venv312/
+venv/
+.idea/
+
+# Python and test/build artifacts.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.tools/
+.models/

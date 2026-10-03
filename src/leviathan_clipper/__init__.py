@@ -1,0 +1,1 @@
+"""LeviathanClipper desktop application package."""

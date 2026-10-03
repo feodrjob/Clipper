@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leviathan-clipper"
+version = "0.1.0"
+description = "Local Windows desktop application for creating vertical video clips."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+# faster-whisper 1.2 uses av.open(metadata_errors=...), removed in PyAV 19.
+dependencies = ["PySide6>=6.8,<7", "faster-whisper>=1.2,<2", "av>=11,<19", "jsonschema>=4.23,<5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.gui-scripts]
+leviathan-clipper = "leviathan_clipper.application.startup:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["leviathan_clipper*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra --import-mode=importlib"
+markers = ["local_model: opt-in real faster-whisper transcription with provisioned local assets",
+           "ollama_model: opt-in already provisioned local Ollama runtime/model"]
